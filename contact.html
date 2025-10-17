@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - LA ANDRES HOTEL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('contact-bg.jpg') center/cover no-repeat fixed;
+      color: #222;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(3px);
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+    }
+
+    .info {
+      line-height: 1.8;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="HotelReservationManagement.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+    <div class="info">
+      <p>📍 Address: Sitio Pook, Barangay Ayusan I, Tiaong Quezon</p>
+      <p>☎ Phone: (+63)976 215 8287</p>
+      <p>📧 Email: laandreshotel@gmail.com</p>
+      <p>🕒 Office Hours: 8:00 AM – 10:00 PM (Daily)</p>
+      <p>💬 For reservations and inquiries, feel free to message us anytime!</p>
+    </div>
+	
+	<section id="review">
+  <h2>Leave a Review or Suggestion</h2>
+  <p style="text-align:center;">We value your feedback! Please share your experience or suggestions below.</p>
+
+  <form id="reviewForm"
+        style="max-width:600px; margin:20px auto; background-color:rgba(255,255,255,0.7);
+               padding:20px; border-radius:10px;">
+               
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required
+           style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email"
+           style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;">
+
+    <label for="message">Your Review or Suggestion:</label>
+    <textarea id="message" name="message" rows="10" maxlength="1000"
+              placeholder="Type your message here (up to 1000 characters)"
+              style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; resize:vertical;"></textarea>
+
+    <button type="submit"
+            style="background-color:#1e3a8a; color:white; border:none; padding:10px 20px;
+                   border-radius:5px; cursor:pointer; margin-top:10px;">
+      Submit Review
+    </button>
+  </form>
+
+  <script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      alert("✅ Thank you for your feedback! We truly appreciate it.");
+      this.reset(); 
+    });
+  </script>
+</section>
+  </main>
+ 
+  <footer>
+    <p>© 1997 LA ANDRES HOTEL. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
