@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA ANDRES HOTEL</title>
+  <style>
+    /* ===== General Body Settings ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('your-background.jpg') center/cover no-repeat fixed;
+      color: #222;
+    }
+
+    /* ===== Header Section ===== */
+    header {
+      background-color: rgba(0, 0, 0, 0.6); /* 60% transparent black */
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    /* ===== Main Section ===== */
+    main {
+      background-color: rgba(255, 255, 255, 0.6); /* 60% transparent white */
+      backdrop-filter: blur(3px);
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+    }
+
+    /* ===== Room Cards ===== */
+    .rooms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .room-card {
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+      padding: 15px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .room-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #15266b;
+    }
+
+    /* ===== Booking Form ===== */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    /* ===== Footer Section ===== */
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <header style="
+  background: url('House1.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  font-family: Arial, sans-serif;
+">
+    <h1>🏨 LA ANDRES HOTEL</h1>
+    <p>Your Comfort, Our Priority</p>
+  </header>
+   <style>
+  header h1 {
+    color: #FF0000; 
+  }
+</style>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to LA ANDRES HOTEL</h2>
+      <p style="text-align:center;">
+        Experience comfort and relaxation. Enjoy your stay with our excellent service and cozy rooms.
+      </p>
+    </section>
+	<nav>
+  <a href="HotelReservationManagement.html">Home</a>
+  <a href="#rooms">Rooms</a>
+  <a href="#book">Book</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+
+    <section id="rooms">
+      <h2>Available Rooms</h2>
+	  
+      <div class="rooms">
+        <div class="room-card">
+          <img src="room1.jpeg" alt="Room 1">
+          <h3>Standard Room</h3>
+          <p>₱500 per night</p>
+          <button>Book Now</button>
+        </div>
+
+        <div class="room-card">
+          <img src="room2.jpg" alt="Room 2">
+          <h3>Deluxe Room</h3>
+          <p>₱800 per night</p>
+          <button>Book Now</button>
+        </div>
+
+        <div class="room-card">
+          <img src="room3.jpg" alt="Room 3">
+          <h3>Family Suite</h3>
+          <p>₱1200 per night</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <h2>Book a Room</h2>
+     <form id="bookingForm"
+        style="max-width:500px; margin:0 auto; background-color:rgba(255,255,255,0.7);
+               padding:20px; border-radius:10px;">
+               
+    <label>Full Name:</label>
+    <input type="text" placeholder="Enter your name" required
+           style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; margin-bottom:15px;">
+
+    <label>Check-in Date:</label>
+    <input type="date" required
+           style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; margin-bottom:15px;">
+
+    <label>Check-out Date:</label>
+    <input type="date" required
+           style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; margin-bottom:15px;">
+
+    <label>Room Type:</label>
+    <select required
+            style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; margin-bottom:15px;">
+      <option value="">Select Room</option>
+      <option>Standard Room</option>
+      <option>Deluxe Room</option>
+      <option>Family Suite</option>
+    </select>
+
+    <button type="submit"
+            style="background-color:#1e3a8a; color:white; border:none; padding:10px 20px;
+                   border-radius:5px; cursor:pointer;">
+      Confirm Booking
+    </button>
+  </form>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      alert("🏨 Thank you for booking with LA ANDRES HOTEL! We look forward to your stay.");
+      this.reset();
+    });
+  </script>
+</section>
+  </main>
+
+  <footer>
+    <p>📍 Sitio Pook, Barangay Ayusan I, Tiaong Quezon | ☎ (+63)976 215 8287</p>
+    <p>© 1997 LA ANDRES HOTEL. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
